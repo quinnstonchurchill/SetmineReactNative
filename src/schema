@@ -1,0 +1,78 @@
+App.js
+components
+    Avatar.js
+    Button.js
+    Set.js
+    SetCard.js
+    SetList.js
+    Person.js
+    Track.js
+    Heading.js
+    Icon.js
+    Navbar.js
+    Cell.js
+    Filter.js
+    OptionsMenu.js
+    Dropdown.js
+    appReducer.js
+    appActions.js
+player
+    Player.js
+    PlayerControls
+    Tracklist.js
+    Waves.js
+    Circle.js
+    playerReducer.js
+    playerActions.js
+events
+    Events.js
+    EventCard.js
+    Event.js
+    EventDetail.js
+    eventsActions.js
+    eventsReducer.js
+discover
+    Discover.js
+    Popular.js
+    Recent.js
+    Genres.js
+    GenreCard.js
+    Mixes.js
+    MixCard.js
+    MixDetail.js
+    GenreDetail.js
+    discoverActions.js
+    discoverReducer.js
+search
+    Search.js
+    SearchBar.js
+    searchActions.js
+    searchReducer.js
+user (offline stuff goes here)
+    Home.js
+    Login.js
+    CreateAcccount.js
+    Favorites.js
+    Recommended.js
+    Following.js
+    Faceboook.js
+    Google.js
+    userActions.js
+    userReducer.js
+settings
+    Settings.js
+    settingsActions.js
+    settingsReducer.js
+artists
+    Artists.js
+    ArtistDetail.js
+    artistReducer.js
+    artistActions.js
+styles
+    navBarStyle.js
+    tabsStyle.js
+store
+theme
+utils
+icons
+images
