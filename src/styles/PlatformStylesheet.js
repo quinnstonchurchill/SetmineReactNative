@@ -1,6 +1,6 @@
 import { Platform, StyleSheet } from 'react-native'
 
-/* 
+/**
  * helper for automatically applying platform specific styles
  */
 
@@ -8,7 +8,7 @@ import { Platform, StyleSheet } from 'react-native'
 
 const styles = PlatformStyleSheet.create({
     container: {
-        backgroundColor: '#ffffff',
+        backgroundColor: 'white,
         ios: {
             fontFamily: ‘Arial’,
         },

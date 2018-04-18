@@ -4,11 +4,9 @@ import {
     StyleSheet
 } from 'react-native'
 import PropTypes from 'prop-types'
-import {
-    colors,
-    Text
-} from '../styles'
+import { colors } from '../styles'
 import RightButton from './RightButton'
+import Text from './Text'
 
 export default class Heading extends Component {
     static propTypes = {

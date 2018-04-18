@@ -1,6 +1,6 @@
 import React from 'react'
 import { TouchableOpacity } from 'react-native'
-import { Text } from '../styles'
+import Text from './Text'
 
 export default function RightButton(props) {
     return (
