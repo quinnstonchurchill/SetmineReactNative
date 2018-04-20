@@ -4,7 +4,7 @@ import {
     StyleSheet
 } from 'react-native'
 import PropTypes from 'prop-types'
-import { colors } from '../styles'
+import { dims, colors } from '../styles'
 import RightButton from './RightButton'
 import Text from './Text'
 
@@ -22,7 +22,11 @@ export default class Heading extends Component {
         const { small, items } = this.props
         return (
             <View style={[styles.base, (small ? styles.small : styles.default)]}>
-                {small ? <Text.sm bold>{this.props.title}</Text.sm> : <Text.lg bold>{this.props.title}</Text.lg>}
+                {small ? (
+                    <Text.sm bold>{this.props.title}</Text.sm>
+                    ) : (
+                        <Text.lg bold>{this.props.title}</Text.lg>
+                    )}
                 {items > 3 && <RightButton>See All</RightButton>}
             </View>
         )
@@ -36,7 +40,9 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         borderBottomColor: colors.border,
         borderBottomWidth: 1,
-        paddingBottom: 5
+        paddingBottom: 5,
+        paddingLeft: dims.paddingX,
+        paddingRight: dims.paddingX
     },
     small: {
         height: 48

@@ -4,7 +4,7 @@ import navBar from './navBar'
 import tabs from './tabs'
 import font from './font'
 import styles from './styles'
-import * as config from './config'
+import * as dims from './dims'
 
 export {
     font,
@@ -12,7 +12,7 @@ export {
     iconConfig,
     navBar,
     tabs,
-    config
+    dims
 }
 
 export default styles

@@ -5,16 +5,14 @@ import { colors, iconConfig } from '../styles'
 
 const SetmineIcons = createIconSetFromIcoMoon(iconConfig)
 
-export default function Icon(props) {
-    const { color, size, ...other } = props
-    return (
-        <SetmineIcons
-            color={colors[color]}
-            size={size}
-            {...other}
-        />
-    )
-}
+const Icon = ({ name, color, size, ...props }) => (
+    <SetmineIcons
+        name={name}
+        color={colors[color]}
+        size={size}
+        {...props}
+    />
+);
 
 Icon.propTypes = {
     size: PropTypes.number,
@@ -25,3 +23,5 @@ Icon.defaultProps = {
     size: 24,
     color: 'grey'
 }
+
+export default Icon

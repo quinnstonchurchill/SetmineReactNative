@@ -1,36 +1,34 @@
 import { StyleSheet } from 'react-native'
 
-const font = StyleSheet.create({
+export default StyleSheet.create({
     xs: {
         fontFamily: 'Avenir Next',
-        lineHeight: 1.5,
+        lineHeight: 18,
         fontSize: 12
     },
     sm: {
         fontFamily: 'Avenir Next',
-        lineHeight: 1.5,
+        lineHeight: 21,
         fontSize: 14
     },
     md: {
         fontFamily: 'Avenir Next',
-        lineHeight: 1.5,
+        lineHeight: 24,
         fontSize: 16
     },
     lg: {
         fontFamily: 'Avenir Next',
-        lineHeight: 1.5,
+        lineHeight: 30,
         fontSize: 20
     },
     xl: {
         fontFamily: 'Avenir Next',
-        lineHeight: 1.25,
+        lineHeight: 30,
         fontSize: 24
     },
     xxl: {
         fontFamily: 'Avenir Next',
-        lineHeight: 1.15,
+        lineHeight: 35,
         fontSize: 30
     }
-});
-
-export default font
+})

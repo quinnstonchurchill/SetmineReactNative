@@ -1,47 +1,18 @@
-// import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
 import { Navigation } from 'react-native-navigation'
 import { Provider } from 'react-redux'
 import configureStore from './configureStore'
 import registerScreens from './screens'
-// import { iconsMap, iconsLoaded } from './utils/AppIcons'
 import { tabs } from './styles'
+
+import discover from './icons/discover.png'
+import discoverSelected from './icons/discover-selected.png'
+import home from './icons/home.png'
+import homeSelected from './icons/home-selected.png'
 
 const store = configureStore()
 registerScreens(store, Provider)
 
 console.disableYellowBox = true /* eslint-disable-line */
-
-// export default class App extends Component {
-//     static childContextTypes = {
-//         theme: PropTypes.object
-//     }
-//     constructor(props) {
-//         super(props)
-//         // iconsLoaded().then(() => {
-//         //     this.startApp()
-//         // })
-
-//         this.startApp()
-//     }
-//     getChildContext() {
-//         return {
-//             theme
-//         }
-//     }
-//     startApp() {
-//         Navigation.startTabBasedApp({
-//             tabs: [
-//                 {
-//                     label: 'Discover',
-//                     screen: 'Setmine.Discover',
-//                     title: 'Discover'
-//                 }
-//             ],
-//             tabsStyle
-//         })
-//     }
-// }
 
 export default function App() {
     Navigation.startTabBasedApp({
@@ -49,12 +20,16 @@ export default function App() {
             {
                 label: 'Discover',
                 screen: 'Setmine.Discover',
-                title: 'Discover'
+                title: 'Discover',
+                icon: discover,
+                selectedIcon: discoverSelected,
             },
             {
                 label: 'Home',
                 screen: 'Setmine.Home',
-                title: 'Home'
+                title: 'Home',
+                icon: home,
+                selectedIcon: homeSelected,
             }
         ],
         tabsStyle: tabs
