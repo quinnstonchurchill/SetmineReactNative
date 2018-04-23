@@ -1,20 +1,7 @@
 {
   "name": "SetmineReactNative",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "devDependencies": {
-    "babel-eslint": "^8.2.3",
-    "babel-preset-react-native-stage-0": "^1.0.1",
-    "eslint": "^4.9.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0",
-    "jest": "^22.4.3",
-    "jest-react-native": "^18.0.0",
-    "react-test-renderer": "16.3.0-alpha.1",
-    "redux-logger": "^3.0.6"
-  },
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
@@ -31,6 +18,19 @@
   "jest": {
     "preset": "react-native"
   },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.3",
+    "jest-react-native": "^18.0.0",
+    "react-test-renderer": "16.3.0-alpha.1",
+    "redux-logger": "^3.0.6"
+  },
   "dependencies": {
     "color": "^3.0.0",
     "prop-types": "^15.6.1",
@@ -40,7 +40,6 @@
     "react-native-vector-icons": "^4.6.0",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
-    "redux-saga": "^0.16.0",
-    "styled-components": "^3.2.5"
+    "redux-saga": "^0.16.0"
   }
 }

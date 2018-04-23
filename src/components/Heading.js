@@ -4,7 +4,7 @@ import {
     StyleSheet
 } from 'react-native'
 import PropTypes from 'prop-types'
-import { dims, colors } from '../styles'
+import { vars, colors } from '../styles'
 import RightButton from './RightButton'
 import Text from './Text'
 
@@ -41,8 +41,8 @@ const styles = StyleSheet.create({
         borderBottomColor: colors.border,
         borderBottomWidth: 1,
         paddingBottom: 5,
-        paddingLeft: dims.paddingX,
-        paddingRight: dims.paddingX
+        paddingLeft: vars.paddingX,
+        paddingRight: vars.paddingX
     },
     small: {
         height: 48

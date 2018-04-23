@@ -1,7 +1,16 @@
 // import { StyleSheet } from 'react-native'
 import PlatformStyleSheet from './PlatformStylesheet'
 import colors from './colors'
-import * as dims from './dims'
+import * as vars from './vars'
+
+// background styles
+// usage: style={s.white_bg}
+const backgrounds = {}
+Object.keys(colors).forEach(color => {
+    backgrounds[`${color}_bg`] = {
+        backgroundColor: colors[color]
+    }
+})
 
 const styles = PlatformStyleSheet.create({
     // containers
@@ -12,10 +21,22 @@ const styles = PlatformStyleSheet.create({
         backgroundColor: colors.background,
         flex: 1
     },
+    card: {
+        backgroundColor: colors.white,
+        // minWidth: vars.cardWidth,
+        width: vars.cardWidth,
+        borderRadius: vars.borderRadius,
+        padding: vars.spacing1x,
+
+    },
     // layouts
     row: {
         flexDirection: 'row',
         flexWrap: 'wrap'
+    },
+    rowNowrap: {
+        flexDirection: 'row',
+        flexWrap: 'nowrap'
     },
     column: {
         flexDirection: 'column'
@@ -34,25 +55,35 @@ const styles = PlatformStyleSheet.create({
         alignSelf: 'center',
         textAlign: 'center'
     },
+    flex1: {
+        flex: 1
+    },
+    flex2: {
+        flex: 2
+    },
+    flex3: {
+        flex: 3
+    },
     // cell
     cell: {
         flexDirection: 'row',
-        padding: dims.spacing2x
+        padding: vars.spacing2x
     },
     borderBottom: {
         flex: 1,
-        marginLeft: dims.spacing2x,
-        marginRight: dims.spacing2x,
+        marginLeft: vars.spacing2x,
+        marginRight: vars.spacing2x,
         backgroundColor: colors.border,
         height: 1
     },
     // colors
+    ...backgrounds,
     overlay: {
         position: 'absolute',
         backgroundColor: colors.charcoal,
         opacity: 0.5,
-        width: dims.screenWidth,
-        height: dims.screenHeight
+        width: vars.screenWidth,
+        height: vars.screenHeight
     },
     // shadows
     shadow1: {

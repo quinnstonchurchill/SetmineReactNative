@@ -21,4 +21,8 @@ export const spacing6x = spacing(6)
 export const paddingX = spacing2x
 export const paddingY = spacing1x
 
+export const cardHeight = 140
+export const cardWidth = 180
+
+export const activeOpacity = 0.8
 export const borderRadius = 3

@@ -10,8 +10,12 @@ class Discover extends Component {
         return (
             <ScrollView style={s.page}>
                 <Heading title='Trending' />
-                <Set />
-                <Set />
+                <Set card />
+                <Heading title='Recently Uploaded' />
+                <Heading title='Artists We Love' />
+                <Heading title='Genres & Moods' />
+                <Heading title='Radio Mixes' />
+                <Heading title='Past Events' />
             </ScrollView>
         )
     }
