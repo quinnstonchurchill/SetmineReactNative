@@ -1,0 +1,29 @@
+
+<% if (redux) { -%>
+import React from 'react'
+import { View, StyleSheet } from 'react-native'
+import { connect } from 'react-redux'
+<% } -%>
+
+<% if (stateless) { -%>
+const <%- name %> = ({ props }) => {
+    return (
+        <View>
+        </View>
+    )
+}
+
+export default <%- name %>
+<% } else if (redux) { -%>
+import React, { Component } from 'react'
+import { View, StyleSheet } from 'react-native'
+
+class <%- name %> extends Component {
+    render() {
+        return (
+            <div className='<%- name %>'>
+                <h6><%- name %></h6>
+            </div>
+        );
+    }
+}

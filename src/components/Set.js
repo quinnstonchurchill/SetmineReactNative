@@ -6,6 +6,7 @@ import Avatar from './Avatar'
 import Icon from './Icon'
 import Text from './Text'
 import nectar from '../images/nectard.png'
+import { formatArtists } from '../utils/formatUtils'
 
 export default class Set extends Component {
     static propTypes = {
